@@ -4,11 +4,11 @@ class AnimalIndex extends Component {
     render() {
       return (
         <>
-            <h1>This is Animal Index</h1>
+            <h2>This is Animal Index</h2>
         </>
       )
     }
   }
   
   
-  export default AnimalIndex;
+  export default AnimalIndex

@@ -1,9 +1,9 @@
 
 
 let characters = [
-    {name: 'thing1', type: 'cat', enjoys: 'sipping tea'},
-    {name: 'thing2', type: 'doggo', enjoys: 'a nice bone'},
-    {name: 'thing3', type: 'elephant', enjoys: 'peanuts'}
+    {id: 1, name: 'Raymond', type: 'cat', enjoys: 'sipping tea', personality: 'smug'},
+    {id: 2, name: 'Harv', type: 'doggo', enjoys: 'a nice bone', personality: 'hippie'},
+    {id: 3, name: 'Eloise', type: 'elephant', enjoys: 'peanuts', personality: 'snooty'}
 ]
 
 export default characters;

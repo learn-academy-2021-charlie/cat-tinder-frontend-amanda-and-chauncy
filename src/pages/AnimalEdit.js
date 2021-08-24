@@ -4,7 +4,7 @@ class AnimalEdit extends Component {
     render() {
       return (
         <>  
-            <h1>This is Animal Edit</h1>
+            <h2>This is Animal Edit</h2>
         </>
       )
     }

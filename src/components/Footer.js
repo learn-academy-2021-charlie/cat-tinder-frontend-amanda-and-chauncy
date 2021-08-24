@@ -1,22 +1,17 @@
-import React, {Component } from 'react';
+import React, { useState } from 'react';
 import {
-    Collapse,
     Navbar,
-    NavbarToggler,
     NavbarBrand,
     Nav,
     NavItem,
     NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem,
-    NavbarText
+ 
   } from 'reactstrap';
-
-class Footer extends Component {
-    render() {
-      return (
+  
+  const Footer = (props) => {
+    const footer = useState(true);
+  
+   return (
         <>
         <footer className='footer'>
             <Navbar color="light" light expand="md">
@@ -31,7 +26,7 @@ class Footer extends Component {
         </>
       )
     }
-  }
+  
   
   
   export default Footer;

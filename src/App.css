@@ -1,8 +1,30 @@
+/* ---HEADER--- */
+header {
+  background-color: #EBE0D0;
+  align-content: center;
+}
+.acnh-logo {
+  width: 150px;
+  margin-left: 20px;
+}
 
 .header-style {
   font-family: 'FinkHeavy';
 }
 
+h2{
+  font-family:'FinkHeavy';
+  font-size: xx-large;
+}
+
+.bg{
+  background-color: #8ecfea ;
+  background-size: cover;
+  background-repeat:no-repeat;
+  height: 100vh;
+}
+
+/* ---FOOTER---- */
 .footer-style {
   font-family: 'FinkHeavy';
 }
