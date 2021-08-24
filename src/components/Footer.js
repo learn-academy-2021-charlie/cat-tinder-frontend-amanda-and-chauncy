@@ -21,12 +21,10 @@ import {
                             <NavLink href="/animalnew">FOOTER Place Holder</NavLink>
                         </NavItem>
                     </Nav>
-                </Navbar>
-            </footer>
+            </Navbar>
+        </footer>
         </>
       )
     }
-  
-  
-  
+
   export default Footer;
