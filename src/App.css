@@ -1,8 +1,31 @@
-
-.header-style {
-  font-family: 'FinkHeavy';
+/* ---HEADER--- */
+header {
+  background-color: #EBE0D0;
+  align-content: center;
+}
+.acnh-logo {
+  width: 150px;
+  margin-left: 20px;
 }
 
+.header-style.navbar-brand {
+  font-family: 'FinkHeavy';
+  font-size: 30px;
+}
+
+h2{
+  font-family:'FinkHeavy';
+  font-size: xx-large;
+}
+
+.bg{
+  background-color: #8ecfea ;
+  background-size: cover;
+  background-repeat:no-repeat;
+  height: 100vh;
+}
+
+/* ---FOOTER---- */
 .footer-style {
   font-family: 'FinkHeavy';
 }
@@ -14,9 +37,19 @@
 }
 
 .footer {
+  font-size: 20px;
   position: fixed;
+  display: flex;
   left: 0;
   bottom: 0;
+  height: 60px;
   width: 100%;
-  text-align: center;
+  align-content: center;
+  justify-content: center;
+  background-color: #fff9e5;
+  font-family: 'FinkHeavy';
+}
+
+.footer .nav-link {
+  color: #017c74;
 }

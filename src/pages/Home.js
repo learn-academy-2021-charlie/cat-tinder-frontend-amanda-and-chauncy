@@ -4,9 +4,9 @@ import React, {Component } from 'react';
 class Home extends Component {
     render() {
       return (
-        <>
-            <h1>This is the Home Page</h1>
-        </>
+        <div class="bg">
+            <h2>This is the Home Page</h2>
+        </div>
       )
     }
   }

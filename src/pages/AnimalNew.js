@@ -4,7 +4,7 @@ class AnimalNew extends Component {
     render() {
       return (
         <>
-            <h1>This is Animal New</h1>
+            <h2>This is Animal New</h2>
         </>
       )
     }

@@ -4,7 +4,7 @@ class AnimalShow extends Component {
     render() {
       return (
         <>
-            <h1>This is Animal Show</h1>
+            <h2>This is Animal Show</h2>
         </>
       )
     }

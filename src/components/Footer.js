@@ -1,37 +1,32 @@
 import React, {Component } from 'react';
+
 import {
-    Collapse,
     Navbar,
-    NavbarToggler,
     NavbarBrand,
     Nav,
     NavItem,
     NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem,
-    NavbarText
+ 
   } from 'reactstrap';
+  
+class Footer extends Component{
 
-class Footer extends Component {
-    render() {
-      return (
+  render() {
+   return (
         <>
         <footer className='footer'>
-            <Navbar color="light" light expand="md">
-                    <NavbarBrand className='header-style' href="/">Animal Crossing Tinder</NavbarBrand>
-                    <Nav className="mr-auto" navbar>
-                        <NavItem>
-                            <NavLink href="/animalnew">FOOTER Place Holder</NavLink>
-                        </NavItem>
-                    </Nav>
-                </Navbar>
-            </footer>
+            <ul>
+              <NavLink to='/'>&copy; 2021 Chauncy & Amanda</NavLink>
+            </ul>
+            <ul>
+              <NavLink to='/animalshow'>See all Characters</NavLink>
+            </ul>
+            <ul>
+              <NavLink to='/animalnew'>Add a Character</NavLink>
+            </ul>
+        </footer>
         </>
       )
     }
   }
-  
-  
   export default Footer;
