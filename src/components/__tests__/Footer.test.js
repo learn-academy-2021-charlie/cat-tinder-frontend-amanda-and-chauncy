@@ -10,6 +10,8 @@ describe("When the Footer Loads ...", () => {
     beforeEach(() => {
         footer = shallow(<Footer/>)
     })
-    it('Displays a ')
-
+    it('Displays a unordered list as links', () => {
+        const link = footer.find('NavLink')
+        expect(link.length).toEqual(3)
+    })
 })

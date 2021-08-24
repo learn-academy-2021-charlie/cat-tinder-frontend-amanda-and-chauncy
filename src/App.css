@@ -8,8 +8,9 @@ header {
   margin-left: 20px;
 }
 
-.header-style {
+.header-style.navbar-brand {
   font-family: 'FinkHeavy';
+  font-size: 30px;
 }
 
 h2{
@@ -36,9 +37,19 @@ h2{
 }
 
 .footer {
+  font-size: 20px;
   position: fixed;
+  display: flex;
   left: 0;
   bottom: 0;
+  height: 60px;
   width: 100%;
-  text-align: center;
+  align-content: center;
+  justify-content: center;
+  background-color: #fff9e5;
+  font-family: 'FinkHeavy';
+}
+
+.footer .nav-link {
+  color: #017c74;
 }
