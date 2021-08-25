@@ -8,20 +8,19 @@ import NotFound from './pages/NotFound'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import './App.css';
-import character from './mockCharacters.js'
-
 
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
+import characters from './mockCharacters.js';
 
 class App extends Component {
   constructor(props){
     super(props)
     this.state = {
-      character: character
+      characters: characters
     }
   }
 
