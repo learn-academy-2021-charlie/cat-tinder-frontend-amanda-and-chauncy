@@ -8,7 +8,7 @@ class AnimalNew extends Component {
     this.state = {
       form: {
         name: "",
-        age: "",
+        animal: "",
         enjoys: "",
         personality: "",
       },

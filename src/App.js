@@ -23,20 +23,28 @@ class App extends Component {
       characters: characters
     }
   }
+  updateCharacter = (editcharacter, id) => {
+    // console.log("cat:", editcharacter)
+    // console.log("id:", id)
+  }
 
   createCharacter = (newCharacter) => {
-    console.log(newCharacter)
+    //console.log(newCharacter)
   }
   render() {
-    console.log(this.state.character);
+    //console.log(this.state.character);
     return (
       <Router>
         <Header />
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route  path='/animaledit' component={AnimalEdit} />
-          <Route  path='/animalindex' render={(props) => <AnimalIndex characters={this.state.characters}/>} />
-          <Route  path='/animalshow/:id' render={(props) => {
+          <Route path={'/animaledit/:id'} render={(props) => {
+            let id = props.match.params.id
+            let character = this.state.characters.find(character => character.id === +id)
+            return <AnimalEdit updateCharacter={this.updateCharacter} character={character} />
+          }} />
+          <Route path='/animalindex' render={(props) => <AnimalIndex characters={this.state.characters}/>} />
+          <Route path='/animalshow/:id' render={(props) => {
             let id = props.match.params.id
             let character = this.state.characters.find(character => character.id === +id)
             return <AnimalShow character={character}/>
