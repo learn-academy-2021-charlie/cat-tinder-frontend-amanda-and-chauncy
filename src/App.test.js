@@ -4,6 +4,7 @@ import Adapter from 'enzyme-adapter-react-16'
 import App from './App';
 import Home from './pages/Home'
 import AnimalIndex from './pages/AnimalIndex'
+import characters from './mockCharacters.js' 
 
 Enzyme.configure({ adapter: new Adapter()})
 
@@ -23,6 +24,6 @@ describe('When the app renders', ()=> {
   it('provides a route "/animalindex" to the AnimalIndex component', () =>{
     const renderedApp = shallow(<App/>)
     const renderedAnimalIndexRoute = renderedApp.find('[path="/animalindex"]')
-    expect(renderedAnimalIndexRoute.props().component).toEqual(AnimalIndex)
+    expect(renderedAnimalIndexRoute.props().render()).toEqual(<AnimalIndex characters={characters}/>);
   })
 })
