@@ -8,20 +8,19 @@ import NotFound from './pages/NotFound'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import './App.css';
-import character from './mockCharacters.js'
-
 
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
+import characters from './mockCharacters.js';
 
 class App extends Component {
   constructor(props){
     super(props)
     this.state = {
-      character: character
+      characters: characters
     }
   }
 
@@ -36,8 +35,12 @@ class App extends Component {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route  path='/animaledit' component={AnimalEdit} />
-          <Route  path='/animalindex' component={AnimalIndex} />
-          <Route  path='/animalshow' component={AnimalShow} />
+          <Route  path='/animalindex' render={(props) => <AnimalIndex characters={this.state.characters}/>} />
+          <Route  path='/animalshow/:id' render={(props) => {
+            let id = props.match.params.id
+            let character = this.state.characters.find(character => character.id === +id)
+            return <AnimalShow character={character}/>
+          }} />
           <Route  path='/animalnew' render={(props) => <AnimalNew createCharacter = {this.createCharacter}/>} />
           <Route  component={NotFound} />
         </Switch>
