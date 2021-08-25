@@ -24,6 +24,10 @@ class App extends Component {
       character: character
     }
   }
+
+  createCharacter = (newCharacter) => {
+    console.log(newCharacter)
+  }
   render() {
     console.log(this.state.character);
     return (
@@ -34,7 +38,7 @@ class App extends Component {
           <Route  path='/animaledit' component={AnimalEdit} />
           <Route  path='/animalindex' component={AnimalIndex} />
           <Route  path='/animalshow' component={AnimalShow} />
-          <Route  path='/animalnew' component={AnimalNew} />
+          <Route  path='/animalnew' render={(props) => <AnimalNew createCharacter = {this.createCharacter}/>} />
           <Route  component={NotFound} />
         </Switch>
         <Footer />
