@@ -2,14 +2,14 @@ import React, {Component } from 'react';
 import { NavLink } from 'react-router-dom'
 import { Card, Button, CardTitle, Row, Col } from 'reactstrap'
 
+
 class AnimalIndex extends Component {
     render() {
-      let { characters } = this.props
       return (
         <div className="page-body">
-            <h2>This is Animal Index</h2>
+            <h2>Meet the Villagers</h2>
             <div className="index-cards">
-              {characters && characters.map(character => {
+              {this.props.characters && this.props.characters.map(character => {
               return (
                 <Row key={character.id}>
                   <Col sm="6">
@@ -30,4 +30,4 @@ class AnimalIndex extends Component {
   }
   
   
-  export default AnimalIndex
+  export default AnimalIndex;

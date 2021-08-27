@@ -1,11 +1,12 @@
 import React, {Component } from 'react';
+import notfound from '../assets/img/notfound.jpeg'
 
 class NotFound extends Component {
     render() {
       return (
-        <>
-            <h2 className='not-found'>HTTP ERROR 404: Page Not Found</h2>
-        </>
+        <div class="notfound">
+            <img src={notfound} alt="the link is broken"/>
+        </div>
       )
     }
   }

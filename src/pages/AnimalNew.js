@@ -10,7 +10,7 @@ class AnimalNew extends Component {
         name: "",
         animal: "",
         enjoys: "",
-        personality: "",
+        personality: ""
       },
       submitted: false
     }
@@ -31,7 +31,7 @@ class AnimalNew extends Component {
       return (
         <>
             <h2>This is Animal New</h2>
-            <Form>
+            <Form className="form">
               <FormGroup>
                 <Label for="name">Name</Label>
                 <Input type="text" name="name" 
@@ -39,8 +39,8 @@ class AnimalNew extends Component {
                 />
               </FormGroup>
               <FormGroup>
-                <Label for="type">Age</Label>
-                <Input type="text" name="type"
+                <Label for="type">Animal</Label>
+                <Input type="text" name="animal"
                 onChange={this.handleChange}
                 />
               </FormGroup>
