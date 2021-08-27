@@ -28,42 +28,43 @@ class AnimalEdit extends Component {
 
     render() {
       return (
-        <>  
-            <h2>Edit your Character</h2>
-            <Form>
+        <>
+        <div className="page-body2">  
+            <Form className="form">
               <FormGroup>
-                <Label>Name</Label>
+                <Label className="label">Name</Label>
                 <Input type="text" name="name"
                   onChange={this.handleChange}
                   value={this.state.form.name}
                 />
               </FormGroup>
               <FormGroup>
-                <Label>Animal</Label>
+                <Label className="label">Animal</Label>
                 <Input type="text" name="animal"
                 onChange={this.handleChange}
                 value={this.state.form.animal}
                 />
               </FormGroup>
               <FormGroup>
-                <Label>Enjoys</Label>
+                <Label className="label">Enjoys</Label>
                 <Input type="text" name="enjoys"
                 onChange={this.handleChange}
                 value={this.state.form.enjoys}
                 />
               </FormGroup>
               <FormGroup>
-                <Label>Personality</Label>
+                <Label className="label">Personality</Label>
                 <Input type="text" name="personality"
                 onChange={this.handleChange}
                 value={this.state.form.personality}
                 />
               </FormGroup>
-            </Form>
-
+              <br></br>
             <Button name='Submit' onClick={this.handleSubmit}>
                 Edit Character
             </Button>
+            </Form>
+            </div>
               { this.state.submitted && <Redirect to={`/animalshow/${this.props.character.id}` } /> }
         </>
       )

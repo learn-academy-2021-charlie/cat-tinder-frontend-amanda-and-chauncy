@@ -18,7 +18,7 @@ class AnimalShow extends Component {
       let {character} = this.props
       return (
         
-        <div className="page-body">
+        <div className="page-body2">
           <br></br>
           {character &&
           <Card body className="card-show">

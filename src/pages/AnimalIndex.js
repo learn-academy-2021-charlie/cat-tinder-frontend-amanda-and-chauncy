@@ -6,8 +6,8 @@ import { Card, Button, CardTitle, Row, Col } from 'reactstrap'
 class AnimalIndex extends Component {
     render() {
       return (
-        <div className="page-body">
-            <h2>Meet the Villagers</h2>
+        <div className="page-body2">
+            <br></br>
             <div className="index-cards">
               {this.props.characters && this.props.characters.map(character => {
               return (
