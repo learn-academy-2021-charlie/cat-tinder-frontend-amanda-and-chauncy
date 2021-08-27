@@ -1,8 +1,9 @@
-
+import raymond from '../src/assets/img/raymond.png'
 
 let characters = [
     {
         id: 1, 
+        image: {raymond},
         name: 'Raymond', 
         type: 'cat', 
         enjoys: 'sipping tea', 

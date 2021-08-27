@@ -13,9 +13,9 @@
 }
 
 /* ---HEADER--- */
+
 header {
   background-color: #EBE0D0;
-  align-content: center;
 }
 .acnh-logo {
   width: 150px;
@@ -25,6 +25,7 @@ header {
 .header-style.navbar-brand {
   font-family: 'FinkHeavy';
   font-size: 30px;
+  justify-content: center;
 }
 
 h2{
@@ -38,6 +39,21 @@ h2{
   background-repeat:no-repeat;
   height: 100vh;
 }
+
+/* ----HOME---- */
+.home-wrapper{
+  padding-top: 20vh;
+}
+.logo{
+  width: 35vw;
+  -webkit-animation: spin 5s  ease;
+  animation: spin 5s  ease;
+}
+
+.button-container{
+  margin: 75px;
+}
+
 /* ---INDEX--- */
 .index-cards {
   display: flex;
@@ -50,18 +66,21 @@ h2{
   margin: 20px;
 }
 .btn.btn-secondary {
-  background-color: #FF0080;
+  width: 125px;
+  margin: 10px;
+  background-color: #f8eebc;
+  color: #017c74;
   font-weight: bolder;
 }
 .btn.btn-secondary:hover {
-  color: #FF0080;
-  background-color: white;
+  color: #017c74;
+  background-color: #f7d359;
 }
 /* ---NOT FOUND--- */
 .not-found {
   font-size: 100px;
   color: red;
-  background-color: black;
+  background-image: url("/src/assets/img/notfound.jpeg");
 }
 
 /* ---SHOW--- */
@@ -90,4 +109,30 @@ h2{
 
 .footer .nav-link {
   color: #017c74;
+}
+
+
+/*------ANIMATIONS-------*/
+
+@-webkit-keyframes spin{
+  from {
+    -webkit-transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(-360deg);
+  }
+}
+
+@keyframes spin{
+  from {
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  
+  to {
+    -moz-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+  }
 }
